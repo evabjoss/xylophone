@@ -4,7 +4,6 @@ import 'package:audioplayers/audioplayers.dart';
 void main() => runApp(XylophoneApp());
 
 class XylophoneApp extends StatelessWidget {
-  @override
   final player = AudioCache();
 
   void playSound(int soundNum) {
@@ -14,6 +13,7 @@ class XylophoneApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.black,
         body: SafeArea(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -23,6 +23,9 @@ class XylophoneApp extends StatelessWidget {
                   onPressed: () {
                     playSound(1);
                   },
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.zero,
+                  ),
                   child: Container(color: Colors.red),
                 ),
               ),
@@ -31,6 +34,9 @@ class XylophoneApp extends StatelessWidget {
                   onPressed: () {
                     playSound(2);
                   },
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.zero,
+                  ),
                   child: Container(color: Colors.orange),
                 ),
               ),
@@ -39,6 +45,9 @@ class XylophoneApp extends StatelessWidget {
                   onPressed: () {
                     playSound(3);
                   },
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.zero,
+                  ),
                   child: Container(color: Colors.yellow),
                 ),
               ),
@@ -47,6 +56,9 @@ class XylophoneApp extends StatelessWidget {
                   onPressed: () {
                     playSound(4);
                   },
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.zero,
+                  ),
                   child: Container(color: Colors.green),
                 ),
               ),
@@ -55,6 +67,9 @@ class XylophoneApp extends StatelessWidget {
                   onPressed: () {
                     playSound(5);
                   },
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.zero,
+                  ),
                   child: Container(color: Colors.blue),
                 ),
               ),
@@ -63,6 +78,9 @@ class XylophoneApp extends StatelessWidget {
                   onPressed: () {
                     playSound(6);
                   },
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.zero,
+                  ),
                   child: Container(color: Colors.purple),
                 ),
               ),
@@ -71,6 +89,9 @@ class XylophoneApp extends StatelessWidget {
                   onPressed: () {
                     playSound(7);
                   },
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.zero,
+                  ),
                   child: Container(color: Colors.pink),
                 ),
               ),
